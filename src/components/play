@@ -1,0 +1,10 @@
+{results.map(res => (
+            <div className="" key={res.id}>
+              <span>{res.book}</span>
+              <span><b>{res.chapter}</b></span>
+              {res.paras.map(p => (
+              <div>
+                <span>{p.no}</span><br/>
+                <span>{p.content}</span>
+              </div>
+              ))}
